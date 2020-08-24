@@ -28,9 +28,9 @@ public class Notebook {
         }
     }
     public void checkYear() {
-        if (this.price = 1000 && this.year >= 2019) {
+        if (this.price == 1000 && this.year >= 2019) {
             System.out.println("This notebook is perfect!");
-        } else (this.price > 1000 && this.year < 2017) {
+        } else if (this.price > 1000 && this.year < 2017) {
             System.out.println("This notebook is not OK");
         }
     }

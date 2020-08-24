@@ -16,21 +16,21 @@ public class Grades {
         this.size++;
     }
 
-    public int ReturnLastGrades() {
+    public int returnLastGrades() {
         if (this.size == 0) {
             return 0;
         }
         return this.grades[this.size - 1];
     }
 
-    public int ReturnGradeAverage() {
+    public int returnGradeAverage() {
         if (this.size == 0) {
             return 0;
         }
-        for (i = 1; i <= grades.length; i++){
+        for (int i = 0; i <= grades.length; i++){
             sum += grades[i];
         }
-        sum /= grades.length;
+         return (int) (sum /= grades.length);
     }
 
 }
