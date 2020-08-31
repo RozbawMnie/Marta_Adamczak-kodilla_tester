@@ -23,14 +23,15 @@ public class Grades {
         return this.grades[this.size - 1];
     }
 
-    public int returnGradeAverage() {
+    public double returnGradeAverage() {
         if (this.size == 0) {
             return 0;
         }
         for (int i = 0; i <= grades.length; i++){
             sum += grades[i];
         }
-         return (int) (sum /= grades.length);
+        return (double) (sum /= grades.length);
+
     }
 
 }
